@@ -9,6 +9,7 @@
 import Foundation
 import ObjectiveC
 
+///交换方法帮助类
 class UISkipControlHelper: NSObject {
      class func exchangeMethod(className:AnyClass, originMethodName:String, currentMethodName:String) {
         let originalPushSelector = Selector(originMethodName)
@@ -26,8 +27,8 @@ class UISkipControlHelper: NSObject {
     }
 }
 
+//block 对象
 class BlockObject {
-    /// real block
     var completionBlock:(()->Void)?
 
     init(block: (()->Void)?) {
