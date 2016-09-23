@@ -10,7 +10,7 @@
         let vc1 = UIViewController()
         self.navigationController?.pushViewController(vc1, animated: true); //会失败，因为同时进行两个push
 
-  解决同事push的crash问题
+  解决同时push的crash问题
   
 ###2.增加跳转队列，将将要跳转的操作加入到队列，当Window可以执行跳转时进行跳转
   
